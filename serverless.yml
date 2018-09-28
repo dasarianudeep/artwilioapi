@@ -12,3 +12,24 @@ functions:
         path: send
         method: post
         cors: true
+  postarmodel:
+    handler: handler.postarmodel
+    events:
+    - http:
+        path: arproducts
+        method: post
+        cors: true
+  postarmodelinfo:
+    handler: handler.postarmodelinfo
+    events:
+    - http:
+        path: arproductinfo
+        method: post
+        cors: true
+  getarmodelinfo:
+    handler: handler.getarmodelinfo
+    events:
+    - http:
+        path: arproductinfo/{productid}
+        method: get
+        cors: true
